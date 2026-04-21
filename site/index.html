@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ariel Ril — Application Security Engineer</title>
+  <meta name="description" content="Application Security Engineer specializing in Kubernetes security, penetration testing, and offensive tooling. OSCP · MSc Computer Science · Netherlands." />
+  <meta name="author" content="Ariel Ril" />
+  <meta property="og:title" content="Ariel Ril — Application Security Engineer" />
+  <meta property="og:description" content="Building open-source security tooling and breaking things — ethically." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="brand-name">ariel-ril</span>
+        <span class="brand-sep">/</span>
+        <span style="color:var(--text-muted)">~</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about"><span class="nav-prefix">./</span>about</a></li>
+        <li><a href="#experience"><span class="nav-prefix">./</span>experience</a></li>
+        <li><a href="#tools"><span class="nav-prefix">./</span>tools</a></li>
+        <li><a href="#certs"><span class="nav-prefix">./</span>certs</a></li>
+        <li><a href="#contact"><span class="nav-prefix">./</span>contact</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="dot"></span>
+        <span>always available</span>
+      </div>
+      <div class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+
+      <!-- Raw prompt sequence, no terminal box -->
+      <div class="hero-prompt-area" id="prompt-output"></div>
+
+      <!-- Identity block -->
+      <div class="hero-identity fade-in visible">
+
+        <div class="name-block">
+          <span class="name-alias" aria-hidden="true">wh04m1</span>
+          <h1 class="name-main">ARIEL<span class="name-ril"> RIL</span></h1>
+        </div>
+
+        <div class="hero-sub">
+          <span class="hero-role">Application Security Engineer</span>
+        </div>
+
+        <div class="hero-links">
+          <a href="#about" class="hero-link">[./about]</a>
+          <a href="#tools" class="hero-link">[./tools]</a>
+          <a href="#contact" class="hero-link">[./contact]</a>
+        </div>
+
+      </div>
+
+      <div class="hero-scroll">
+        <span>scroll</span>
+        <span class="scroll-arrow">↓</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-cmd fade-in">
+        <span class="prompt-char">$</span>
+        <span class="cmd-text">cat about.txt</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>
+            I'm an <strong class="hl-amber">Application Security Engineer</strong> with a
+            <strong>Master's degree in Computer Science</strong> from PUC-RS. My work sits at the intersection
+            of offensive security and engineering — building automation to reduce real-world risk by
+            thinking the way an attacker does.
+          </p>
+          <p>
+            At <span class="hl-amber">ING</span>, I develop open-source tooling for
+            <strong>Kubernetes security assessments</strong>, run
+            <strong>Purple Team exercises</strong>, and conduct penetration testing across
+            web applications and compiled deliverables.
+          </p>
+          <p>
+            Outside of work, I train on <strong>Hack The Box</strong> and
+            <strong>Wiz Cloud Security Challenges</strong>. Currently focused on
+            <span class="hl-green">exploit development</span>, working toward
+            <strong>OSED</strong> and <strong>OSEE</strong>.
+          </p>
+          <p>
+            My primary interests are <strong>application security</strong>,
+            <strong>cloud-native attack surfaces</strong>, and the
+            <strong>Kubernetes threat landscape</strong> — areas where I have contributed
+            publicly available tooling adopted by security teams.
+          </p>
+          
+        </div>
+
+        <div class="skills-panel fade-in" style="transition-delay:0.2s">
+          <div class="skills-panel-header">
+            <span class="sh-prompt">$</span>
+            <span class="sh-cmd">./skills --list --verbose</span>
+          </div>
+          <div class="skills-body">
+            <div class="skill-category">
+              <div class="skill-cat-label">offensive</div>
+              <div class="skill-tags">
+                <span class="skill-tag expert">web-pentesting</span>
+                <span class="skill-tag expert">k8s-pentesting</span>
+                <span class="skill-tag learning">red-teaming</span>
+                <span class="skill-tag learning">exploit-dev</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-cat-label">cloud &amp; infra</div>
+              <div class="skill-tags">
+                <span class="skill-tag active">docker</span>
+                <span class="skill-tag expert">kubernetes</span>
+                <span class="skill-tag active">aws</span>
+                <span class="skill-tag active">azure</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-cat-label">appsec</div>
+              <div class="skill-tags">
+                <span class="skill-tag expert">threat-modeling</span>
+                <span class="skill-tag expert">ssdlc</span>
+                <span class="skill-tag expert">api-security</span>
+                <span class="skill-tag active">vuln-mgmt</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-cat-label">programming</div>
+              <div class="skill-tags">
+                <span class="skill-tag active">bash</span>
+                <span class="skill-tag active">c/c++</span>
+                <span class="skill-tag active">rust</span>
+                <span class="skill-tag active">terraform</span>
+                <span class="skill-tag expert">go</span>
+                <span class="skill-tag expert">nodejs/ts</span>
+                <span class="skill-tag expert">python</span>
+                <span class="skill-tag learning">c#</span>
+              </div>
+            </div>
+            <div class="skill-category" style="margin-bottom:0">
+              <div class="skill-cat-label">legend</div>
+              <div class="skill-tags">
+                <span class="skill-tag expert">expert</span>
+                <span class="skill-tag active">active</span>
+                <span class="skill-tag familiar">familiar</span>
+                <span class="skill-tag learning">learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-cmd fade-in">
+        <span class="prompt-char">$</span>
+        <span class="cmd-text">cat experience.log</span>
+      </div>
+
+      <div class="exp-list">
+
+        <div class="exp-item fade-in">
+          <div class="exp-meta">
+            <div class="exp-date">May 2024 — Present</div>
+            <div class="exp-company">ING</div>
+            <div class="exp-badge">ACTIVE</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-title">Security Engineer</div>
+            <ul class="exp-bullets">
+              <li>Released <strong>KAET</strong> — Kubernetes Breach Assessment Tool <a href="https://ing-bank.github.io/kaet/" target="_blank" rel="noopener">(open source @ ING)</a></li>
+              <li>Released <strong>KAL</strong> — Kubernetes Authorization Listing tool <a href="https://github.com/ing-bank/kal" target="_blank" rel="noopener">(open source @ ING)</a></li>
+              <li>Execute <strong>Purple Team assessments</strong> across the organisation</li>
+              <li>Conduct penetration testing on web applications and compiled deliverables</li>
+              <li>Lead <strong>Threat Modelling assessments</strong></li>
+              <li>Develop security automation tooling for operational workflows</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">kubernetes</span>
+              <span class="exp-tag">red-team</span>
+              <span class="exp-tag">web-pentesting</span>
+              <span class="exp-tag">threat-modeling</span>
+              <span class="exp-tag">go</span>
+              <span class="exp-tag">python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item fade-in">
+          <div class="exp-meta">
+            <div class="exp-date">Jun 2023 — May 2024</div>
+            <div class="exp-company">PagoNxt</div>
+            <div class="exp-badge past">past</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-title">Application Security Engineer</div>
+            <ul class="exp-bullets">
+              <li>Planned and executed <strong>Ethical Hacking assessments</strong> on internal and external-facing applications</li>
+              <li>Advised engineering teams on <strong>secure coding practices</strong> and remediation</li>
+              <li>Integrated <strong>threat modelling</strong> into the SSDLC process</li>
+              <li>Developed security automation tooling</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">appsec</span>
+              <span class="exp-tag">ethical-hacking</span>
+              <span class="exp-tag">ssdlc</span>
+              <span class="exp-tag">threat-modeling</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item fade-in">
+          <div class="exp-meta">
+            <div class="exp-date">Mar 2021 — Jun 2023</div>
+            <div class="exp-company">Agi</div>
+            <div class="exp-badge past">past</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-title">Cyber Security Analyst II</div>
+            <ul class="exp-bullets">
+              <li>Penetration testing of <strong>web and mobile applications</strong></li>
+              <li>Built automation pipelines for <strong>API, web, and cloud security</strong> assessments</li>
+              <li>Managed <strong>cloud security posture</strong> across AWS and Azure</li>
+              <li>Led <strong>Cyber Security Incident Response</strong> engagements</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">pentesting</span>
+              <span class="exp-tag">aws</span>
+              <span class="exp-tag">azure</span>
+              <span class="exp-tag">incident-response</span>
+              <span class="exp-tag">mobile-security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item fade-in">
+          <div class="exp-meta">
+            <div class="exp-date">Nov 2020 — Mar 2021</div>
+            <div class="exp-company">Phi</div>
+            <div class="exp-badge past">past</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-title">Cyber Security Analyst</div>
+            <ul class="exp-bullets">
+              <li>Designed and applied the <strong>NIST Cybersecurity Framework</strong></li>
+              <li>Conducted mobile and web application penetration testing</li>
+              <li>Implemented <strong>SSDLC</strong> practices across development teams</li>
+              <li>Participated in Red/Blue team exercises</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">nist</span>
+              <span class="exp-tag">red-team</span>
+              <span class="exp-tag">blue-team</span>
+              <span class="exp-tag">ssdlc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item fade-in">
+          <div class="exp-meta">
+            <div class="exp-date">Aug 2019 — Nov 2020</div>
+            <div class="exp-company">Phi</div>
+            <div class="exp-badge past">past</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-title">Tech Lead — Digital Payments</div>
+            <div class="exp-desc">
+              Led the Pagamentos Digitais team, delivering highly available payment gateway APIs
+              built on NodeJS/TypeScript and deployed on AWS — processing over one million BRL monthly.
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">nodejs</span>
+              <span class="exp-tag">typescript</span>
+              <span class="exp-tag">aws</span>
+              <span class="exp-tag">kubernetes</span>
+              <span class="exp-tag">rabbitmq</span>
+              <span class="exp-tag">elk-stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item fade-in">
+          <div class="exp-meta">
+            <div class="exp-date">Jul 2017 — Aug 2019</div>
+            <div class="exp-company">4all Tecnologia</div>
+            <div class="exp-badge past">past</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-title">Backend Developer</div>
+            <div class="exp-desc">
+              Developed NodeJS/Typescript APIs with automated deployment pipelines written with TravisCI. Managed the production environment in AWS. All APIs were developed with a microservice mindset, which was managed via Gitlab and continuous source code review.
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">nodejs</span>
+              <span class="exp-tag">typescript</span>
+              <span class="exp-tag">aws</span>
+              <span class="exp-tag">gitlab</span>
+              <span class="exp-tag">source-code-review</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section id="tools">
+    <div class="container">
+      <div class="section-cmd fade-in">
+        <span class="prompt-char">$</span>
+        <span class="cmd-text">ls tools/ --long</span>
+      </div>
+
+      <div class="tools-grid">
+
+        <div class="tool-card fade-in">
+          <div class="tool-lang"><span class="lang-dot go"></span>Go · Open Source</div>
+          <h3>kaet <span class="tool-badge">flagship</span></h3>
+          <p>
+            <strong>Kubernetes Breach Assessment Tool</strong> — evaluates the blast radius of
+            a compromised pod. Maps privilege escalation paths and lateral movement opportunities
+            from an attacker's perspective.
+          </p>
+          <div class="tool-stats">
+            <span>⎈ kubernetes</span>
+            <span>⚔ offensive</span>
+          </div>
+          <div class="tool-footer">
+            <a href="https://github.com/ing-bank/kaet" class="tool-link" target="_blank" rel="noopener">github →</a>
+            <!-- <a href="blog/posts/blog-post.html" class="tool-link">writeup →</a> -->
+          </div>
+        </div>
+
+        <div class="tool-card fade-in" style="transition-delay:0.1s">
+          <div class="tool-lang"><span class="lang-dot go"></span>Go · Open Source</div>
+          <h3>kal</h3>
+          <p>
+            <strong>Kubernetes Authorization Listing</strong> — enumerates all RBAC permissions
+            within a cluster. Surfaces over-privileged service accounts and exploitable
+            misconfigurations quickly and without noise.
+          </p>
+          <div class="tool-stats">
+            <span>⎈ kubernetes</span>
+            <span>🔑 rbac</span>
+          </div>
+          <div class="tool-footer">
+            <a href="https://github.com/ing-bank/kal" class="tool-link" target="_blank" rel="noopener">github →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog">
+    <div class="container">
+      <div class="section-cmd fade-in">
+        <span class="prompt-char">$</span>
+        <span class="cmd-text">ls blog/ | head -5</span>
+      </div>
+
+      <div class="blog-grid fade-in">
+        <a href="#" class="blog-item">
+          <div class="bi-num">00</div>
+          <div class="bi-content">
+            <div class="bi-title">TBD</div>
+            <div class="bi-meta">coming soon</div>
+          </div>
+          <div class="bi-arrow">→</div>
+        </a>
+      </div>
+
+      <!-- UNCOMMENT AFTER ADDED SOME PAGES IN THE BLOG :) -->
+      <!-- <div class="blog-more fade-in">
+        <a href="blog/index.html" class="btn btn-secondary">$ ls blog/ --all →</a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Certs -->
+  <section id="certs">
+    <div class="container">
+      <div class="section-cmd fade-in">
+        <span class="prompt-char">$</span>
+        <span class="cmd-text">ls certs/ honors/</span>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card highlight fade-in">
+          <div class="cert-org">OffSec</div>
+          <div class="cert-name">OSCP</div>
+          <div class="cert-full">Offensive Security Certified Professional</div>
+          <div class="cert-footer">
+            <span class="cert-status earned">Earned</span>
+            <a href="https://github.com/arielril/certifications/blob/7ebf42303c632b9a57f1259325179a390112d7c8/Offensive_Security_Certified_Professional__OSCP.pdf" class="cert-link" target="_blank" rel="noopener">cert →</a>
+          </div>
+        </div>
+
+        <div class="cert-card fade-in" style="transition-delay:0.05s">
+          <div class="cert-org">APIsec</div>
+          <div class="cert-name">API PT</div>
+          <div class="cert-full">API Penetration Testing — Certificate of Completion</div>
+          <div class="cert-footer">
+            <span class="cert-status earned">Earned</span>
+            <a href="https://github.com/arielril/certifications/blob/7ebf42303c632b9a57f1259325179a390112d7c8/APIPenetrationTesting-CertificateofCompletion_Badge20221227-32-ktnngv.pdf" class="cert-link" target="_blank" rel="noopener">cert →</a>
+          </div>
+        </div>
+
+        <div class="cert-card fade-in" style="transition-delay:0.1s">
+          <div class="cert-org">OffSec</div>
+          <div class="cert-name">OSED</div>
+          <div class="cert-full">Windows User Mode Exploit Development</div>
+          <div class="cert-footer">
+            <span class="cert-status in-progress">In Progress</span>
+          </div>
+        </div>
+
+        <div class="cert-card fade-in" style="transition-delay:0.15s">
+          <div class="cert-org">Wiz</div>
+          <div class="cert-name">UCSC</div>
+          <div class="cert-full">Ultimate Cloud Security Challenge</div>
+          <div class="cert-footer">
+            <span class="cert-status in-progress">In Progress</span>
+            <a href="https://github.com/arielril/certifications/blob/1e7f41670504bb2616babc0740df28cfb4aebf98/wiz-ultimate-cloud-security-challenge.png" class="cert-link" target="_blank" rel="noopener">cert →</a>
+          </div>
+        </div>
+
+
+        <div class="cert-card fade-in" style="transition-delay:0.15s">
+          <div class="cert-org">Wiz</div>
+          <div class="cert-name">K8s LP</div>
+          <div class="cert-full">Cloud Security Excellence — K8s LAN Party</div>
+          <div class="cert-footer">
+            <span class="cert-status earned">Earned</span>
+            <a href="https://github.com/arielril/certifications/blob/7ebf42303c632b9a57f1259325179a390112d7c8/kube-party-certificate.png" class="cert-link" target="_blank" rel="noopener">cert →</a>
+          </div>
+        </div>
+
+        <div class="cert-card fade-in" style="transition-delay:0.2s">
+          <div class="cert-org">HTB</div>
+          <div class="cert-name">Dante</div>
+          <div class="cert-full">Pro Labs — Dante (Full Network Pwn)</div>
+          <div class="cert-footer">
+            <span class="cert-status earned">Earned</span>
+            <a href="https://github.com/arielril/certifications/blob/7ebf42303c632b9a57f1259325179a390112d7c8/Dante.pdf" class="cert-link" target="_blank" rel="noopener">cert →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-cmd fade-in">
+        <span class="prompt-char">$</span>
+        <span class="cmd-text">ping ariel --verbose</span>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-text fade-in">
+          <p>
+            Open to <strong>collaboration</strong>, security research discussions,
+            and responsible disclosure coordination.
+          </p>
+          <p>
+            Working on something in the <strong>Kubernetes</strong>,
+            <strong>cloud-native security</strong>, or <strong>offensive tooling</strong>
+            space? <u>I'm interested</u>.
+          </p>
+          <div class="contact-note">
+            <span class="cn-label">// note:</span> Open to speaking invitations,
+            security challenges, and open-source collaborations.
+          </div>
+        </div>
+
+        <div class="contact-channels fade-in" style="transition-delay:0.2s">
+          <a href="https://www.linkedin.com/in/ariel-ril" class="contact-channel" target="_blank" rel="noopener">
+            <span class="ch-icon">in</span>
+            <span class="ch-label">linkedin</span>
+            <span class="ch-val">/in/ariel-ril</span>
+            <span class="ch-arrow">↗</span>
+          </a>
+          <a href="https://github.com/arielril" class="contact-channel" target="_blank" rel="noopener">
+            <span class="ch-icon">⌥</span>
+            <span class="ch-label">github</span>
+            <span class="ch-val">@arielril</span>
+            <span class="ch-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="f-copy">Ariel Ril © 2026 — Application Security Engineer</span>
+        <span class="f-eof">// EOF</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/arielril" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/ariel-ril" target="_blank" rel="noopener">linkedin</a>
+        <a href="#hero">↑ top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
